@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NBA
 //
-//  Created by Daniela Gerdzhikova on 8.09.19.
+//  Created by Bold Lion on 8.09.19.
 //  Copyright © 2019 Bold Lion. All rights reserved.
 //
 

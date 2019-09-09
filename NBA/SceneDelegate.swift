@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  NBA
 //
-//  Created by Daniela Gerdzhikova on 8.09.19.
+//  Created by Bold Liona on 8.09.19.
 //  Copyright © 2019 Bold Lion. All rights reserved.
 //
 
@@ -20,13 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = PlayerList()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
+            window.tintColor =  UIColor.white
             window.makeKeyAndVisible()
         }
     }
