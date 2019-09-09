@@ -13,16 +13,20 @@ struct PlayerRow: View {
     var player: Player
     
     var body: some View {
+        
         HStack() {
+            
             Image(player.imageName)
                 .resizable()
                 .scaledToFit()
                 .clipShape(Circle())
                 .background(Circle().foregroundColor(player.team.color))
-                .frame(width: 80, height: 80)
+                .frame(width: 70.0, height: 70.0)
+            
             Text(player.name)
                 .bold()
                 .font(.system(size: 30))
+                .minimumScaleFactor(0.5)
         }
     }
 }

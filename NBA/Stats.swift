@@ -14,15 +14,21 @@ struct Stats: View {
     var statValue: String
     
     var body: some View {
+        
         HStack {
+            
             Text(statName + ":")
                 .font(.system(size: 35))
                 .fontWeight(.bold)
+            
             Text(statValue)
                 .font(.system(size: 35))
                 .fontWeight(.light)
+            
             Spacer()
-        }.padding()
+        }
+        .padding()
+        .minimumScaleFactor(0.5)
     }
 }
 
