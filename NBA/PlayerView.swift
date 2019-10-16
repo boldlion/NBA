@@ -30,6 +30,8 @@ struct PlayerView: View {
                 .shadow(radius: 10)
                 .offset(x: 0, y: -80)
                 .padding(.bottom, -90)
+                .frame(minWidth: 100, alignment: .center)
+            
             
             Text(player.name)
                 .font(.system(size: 50))
